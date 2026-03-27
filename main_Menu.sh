@@ -9,7 +9,9 @@ echo -n "
 #########################################################
 "
 
+echo
 echo "Welcome to DBMS using Bash"
+echo
 
 main_menu() {
 	while true; do
@@ -20,6 +22,7 @@ main_menu() {
 		echo "4) Drop Database"
 		echo "5) Exit"
 
+		echo
 		read -p "choose: " choice
 		case $choice in 
 			1) . ./createDB.sh ;;

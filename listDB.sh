@@ -2,7 +2,8 @@
 
 list_DB() {
 
-	count=$(ls -l | grep "^d" | awk '{print $9}' | wc -l)
+	path="./Databases"
+	count=$(ls -l "$path" | grep "^d" | awk '{print $9}' | wc -l)
 
 	if [ $count -eq 0 ]; then
 		echo "There is no Databases"
@@ -11,7 +12,7 @@ list_DB() {
 		echo ""
 		echo "Available Databases:"
 		echo ""
-		ls -l | grep "^d" | awk '{print $9}'
+		ls -l "$path" | grep "^d" | awk '{print $9}'
 		echo ""
 	fi
 }

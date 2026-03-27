@@ -1,45 +1,62 @@
-createDatabase(){
-reserved_words=("select" "create" "drop" "delete" "insert" "update" "where" "table" "database")
+#!/bin/bash
 
+create_DB() {
+	reserved_keywords=("select" "create" "drop" "delete" "insert" "update" "where" "table" "database")
 
-while true
-do
-    read -p "Enter database name: " dbname
+	while true; do
+		echo ""
+		read -p "Enter a name for the data base (Or type 'back' to return): " db_name
 
-    if ! [[ $dbname =~ ^[a-zA-Z][a-zA-Z0-9_]*$ ]]
-    then
-        echo "Invalid name ❌"
-        continue
-    fi
+		# Exit option
+		if [[ "${db_name,,}" = "back" ]]; then
+			return
+		fi
 
-    is_reserved=false
+		# Empty name check
+		if [ -z "$db_name" ]; then
+			echo ""
+			echo "Database name can't be empty! ❌"
+			continue
+		fi
 
-    for word in "${reserved_words[@]}"
-    do
-        if [[ "$dbname" == "$word" ]]
-        then
-            is_reserved=true
-            break
-        fi
-    done
+		# Existance check
+		if [ -d "Databases/$db_name" ]; then
+			echo ""
+			echo "Database already exists! ❌"
+			continue
+		fi
 
-    if [[ $is_reserved == true ]]
-    then
-        echo "Invalid name ❌ reserved keyword"
-        continue
-    fi
+		# Name validation check
+		if ! [[ $db_name =~ ^[a-zA-Z][a-zA-Z0-9_]*$ ]]; then
+			echo ""
+			echo "Invalid database name! ❌"
+			continue
+		fi
 
-    if [[ -d "databases/$dbname" ]]
-    then
-        echo "Database already exists ❌"
-        continue
-    fi
+		# Reserved keywords check
+		is_reserved=false
 
-    mkdir "databases/$dbname"
-    echo "Database created successfully ✅"
-    break
+		for keyword in "${reserved_keywords[@]}"; do
+			if [ "$db_name" == "$keyword" ]; then
+				is_reserved=true
+				break
+			fi
+		done
 
-done
+		if [ "$is_reserved" == true ]; then
+			echo ""
+			echo "Invalid database name! ❌   Reserved Keyword"
+			continue
+		fi
+
+		# Database creation
+		mkdir "Databases/$db_name"
+		echo ""
+		echo "Databse '$db_name' is created successfully! ✅"
+		echo ""
+		break
+
+	done
 }
 
-createDatabase
+create_DB

@@ -1,26 +1,27 @@
 #!/bin/bash
 
 connect_to_DB() {
+	echo
 	read -p "Enter Database Name: " db_name
 
-	if [ -d "$db_name" ]; then
-		cd "$db_name" || return
-		echo "Connected to $db_name"
-		echo ""
+	if [ -d "Databases/$db_name" ]; then
+		cd "Databases/$db_name" || return
+		echo
+		echo "Connected to $db_name! ✅"
 
 		table_menu
 
 		cd .. # if you are connected to DB, you Can't get back, so I used (cd ..)
 
 	else
-		echo ""
-		echo "Database doesn't exist!"
-		echo ""
+		echo
+		echo "Database doesn't exist! ❌"
+		echo
 	fi
 }
 
 table_menu() {
-	echo ""
+	echo
 	echo "Database Menu:"
 	while true; do
 		echo "1) Create Table"
@@ -32,8 +33,9 @@ table_menu() {
 		echo "7) Update Table"
 		echo "8) Back To Main Menu"
 
+		echo
 		read -p "Choose: " choice
-
+		echo
 		case $choice in
 			1) echo "1" ;;
 			2) echo "2" ;;
