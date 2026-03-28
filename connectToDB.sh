@@ -43,7 +43,7 @@ table_menu() {
 			4) echo "4" ;;
 			5) echo "5" ;;
 			6) echo "6" ;;
-			7) echo "7" ;;
+			7) . ../../updateTable.sh ;;
 			8) break ;; # To go a step back..
 			*) echo "Invalid Choice!" ;;
 		esac
