@@ -1,20 +1,19 @@
-#! /bin/bash
+#!/bin/bash
 
 listTables() {
-	
-	tables=($(ls ./tables/))
+	tables=(*)
 
-	if [[ ${#tables[@]} -gt 0 ]]
-	then
-		echo "List of Tables"
-    		for t in "${tables[@]}"
-    		do
+	if [ ${#tables[@]} -gt 0 ]; then
+		echo "List of Tables:"
+		echo
+
+    		for t in "${tables[@]}"; do
         		echo "$t"
-    		done
+		done
+		echo
 	else
-    		echo "No tables found"
+    		echo "No tables found! ❌"
 	fi
 }
 
 listTables
-	

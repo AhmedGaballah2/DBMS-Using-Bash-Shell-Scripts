@@ -38,8 +38,8 @@ table_menu() {
 		echo
 		case $choice in
 			1) echo "1" ;;
-			2) echo "2" ;;
-			3) echo "3" ;;
+			2) . ../../listTables.sh ;;
+			3) . ../../dropTable.sh ;;
 			4) echo "4" ;;
 			5) echo "5" ;;
 			6) echo "6" ;;
