@@ -32,7 +32,6 @@ table_menu() {
 		echo "6) Delete From Table"
 		echo "7) Update Table"
 		echo "8) Back To Main Menu"
-
 		echo
 		read -p "Choose: " choice
 		echo
@@ -41,11 +40,13 @@ table_menu() {
 			2) . ../../listTables.sh ;;
 			3) . ../../dropTable.sh ;;
 			4) echo "4" ;;
-			5) echo "5" ;;
-			6) echo "6" ;;
+			5) . ../../selectFromTable.sh;;
+			6) . ../../deleteFromTable.sh;;
 			7) . ../../updateTable.sh ;;
 			8) break ;; # To go a step back..
-			*) echo "Invalid Choice!" ;;
+			*) echo
+			echo "Invalid Choice! ❌"
+			echo ;;
 		esac
 	done
 }

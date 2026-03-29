@@ -8,7 +8,9 @@ listTables() {
 		echo
 
     		for t in "${tables[@]}"; do
-        		echo "$t"
+        		if [[ "$t" != *.meta ]]; then
+				echo "$t"
+			fi
 		done
 		echo
 	else

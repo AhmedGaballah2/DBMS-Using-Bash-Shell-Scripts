@@ -25,11 +25,11 @@ dropTable() {
 			read -p "Are you sure you want to delete $db_name? [y/n]: " ans
 			if [[ "${ans,,}" = "y" ]]; then
 				rm "$table_name"
-				echo "$table_name is deleted successfully! ✅"
+				echo "Table '$table_name' is deleted successfully! ✅"
 				echo
 				break
 			elif [[ "${ans,,}" = "n" ]]; then
-				echo "Table $table_name is not deleted! ❌"
+				echo "Table '$table_name' is not deleted! ❌"
 				echo
 				break
 			else
@@ -39,8 +39,7 @@ dropTable() {
 			fi
 		done
         else
-		ls
-		echo "$table_name is not found! ❌"
+		echo "Table '$table_name' is not found! ❌"
 		echo
 	fi
     done

@@ -30,7 +30,9 @@ main_menu() {
 			3) . ./connectToDB.sh ;;
 			4) . ./dropDB.sh ;;
 			5) break ;;
-			*) echo "Invalid Choice!" ;;
+			*) echo
+			echo "Invalid Choice! ❌"
+			echo ;;
 		esac
 	done
 }
