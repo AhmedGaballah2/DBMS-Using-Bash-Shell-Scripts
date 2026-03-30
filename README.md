@@ -1,29 +1,23 @@
 <p align="center">
-  <h1 align="center">Welcome to Our Project 🚀</h1>
-  <h3 align="center">Your go-to Linux Bash Script for Easy DataBase Management System 🐚</h3>
+  <h1 align="center">Welcome to Our Project 🚀</h1>
+  <h3 align="center">Your go-to Linux Bash Script for Easy DataBase Management System 🐚</h3>
 </p>
 
 <p align="center">
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
-  </a>
-  <img src="https://img.shields.io/badge/OS-Linux-lightgrey?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Language-Bash-orange?style=for-the-badge" alt="Bash" />
-  <img src="https://img.shields.io/badge/Status-Easy%20to%20Use-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Open%20Source-Yes-blueviolet?style=for-the-badge" />
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&left_text=Visitors&left_color=grey&right_color=red&style=for-the-badge" alt="Visitor Count" />
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
+  </a>
+  <img src="https://img.shields.io/badge/OS-Linux-lightgrey?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-Bash-orange?style=for-the-badge" alt="Bash" />
+  <img src="https://img.shields.io/badge/Status-Easy%20to%20Use-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Open%20Source-Yes-blueviolet?style=for-the-badge" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=yellow&style=for-the-badge" />
-  </a>
-  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/stargazers">
-    <img src="https://img.shields.io/github/stars/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=gold&style=for-the-badge" />
-  </a>
-  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/network/members">
-    <img src="https://img.shields.io/github/forks/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=lightgrey&style=for-the-badge" />
-  </a>
+  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/graphs/contributors"><img src="https://img.shields.io/github/contributors/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=yellow&style=for-the-badge" /></a>
+  <br><br>
+  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/stargazers"><img src="https://img.shields.io/github/stars/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=social" /></a>
+  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/network/members"><img src="https://img.shields.io/github/forks/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=social" /></a>
 </p>
 
 # 📊 Bash Script DataBase Management System
