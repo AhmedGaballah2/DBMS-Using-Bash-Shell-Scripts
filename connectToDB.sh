@@ -1,17 +1,19 @@
 #!/bin/bash
 
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 connect_to_DB() {
 	echo
 	read -p "Enter Database Name: " db_name
+	
+	DB_PATH="$BASE_DIR/Databases/$db_name"
 
-	if [ -d "Databases/$db_name" ]; then
-		cd "Databases/$db_name" || return
+	if [ -d "$DB_PATH" ]; then
+		cd "$DB_PATH" || return
 		echo
 		echo "Connected to $db_name! ✅"
 
-		table_menu
-
-		cd .. # if you are connected to DB, you Can't get back, so I used (cd ..)
+		table_menu "$DB_PATH"
 
 	else
 		echo
@@ -21,6 +23,7 @@ connect_to_DB() {
 }
 
 table_menu() {
+DB_PATH="$1"
 	echo
 	echo "Database Menu:"
 	while true; do
@@ -32,18 +35,20 @@ table_menu() {
 		echo "6) Delete From Table"
 		echo "7) Update Table"
 		echo "8) Back To Main Menu"
+		echo "9) Exit"
 		echo
 		read -p "Choose: " choice
 		echo
 		case $choice in
 			1) echo "1" ;;
-			2) . ../../listTables.sh ;;
-			3) . ../../dropTable.sh ;;
+			2) . "$BASE_DIR/listTables.sh" "$DB_PATH" ;;
+			3) . "$BASE_DIR/dropTable.sh" "$DB_PATH" ;;
 			4) echo "4" ;;
-			5) . ../../selectFromTable.sh;;
-			6) . ../../deleteFromTable.sh;;
-			7) . ../../updateTable.sh ;;
+			5) . "$BASE_DIR/selectFromTable.sh" "$DB_PATH" ;;
+			6) . "$BASE_DIR/deleteFromTable.sh" "$DB_PATH" ;;
+			7) . "$BASE_DIR/updateTable.sh" "$DB_PATH" ;;
 			8) break ;; # To go a step back..
+			9) echo "Exiting DBMS... 👋"; echo; exit 0 ;;
 			*) echo
 			echo "Invalid Choice! ❌"
 			echo ;;
