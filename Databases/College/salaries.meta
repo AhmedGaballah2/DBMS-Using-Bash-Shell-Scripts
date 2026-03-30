@@ -1,0 +1,5 @@
+id:int:pk
+professor_id:int
+base:int
+bonus:int
+currency:varchar

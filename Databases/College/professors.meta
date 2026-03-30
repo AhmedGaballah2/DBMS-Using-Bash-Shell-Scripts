@@ -1,0 +1,4 @@
+id:int:pk
+name:varchar
+department:varchar
+age:int

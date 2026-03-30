@@ -1,0 +1,5 @@
+id:int:pk
+employee_id:int
+base:int
+bonus:int
+currency:varchar
