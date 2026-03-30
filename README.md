@@ -1,6 +1,11 @@
 # 📊 Bash Script DataBase Management System
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![OS](https://img.shields.io/badge/OS-Linux-lightgrey.svg)](#)
+[![Language](https://img.shields.io/badge/Language-Bash-orange.svg)](#)
+[![Status](https://img.shields.io/badge/Easy%20to%20Use-Yes-brightgreen.svg)](#)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-blueviolet.svg)](#)
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts)
 
 ## 🌟 Overview
 This project is a **Bash-based database management tool** that lets you manage simple text-based tables entirely from the command line.  
@@ -49,7 +54,7 @@ chmod +x DBMS.sh
 ---
 
 ## 📂 Project Structure
-`
+```
 project/
 ├── scripts/
 │   └── DBMS.sh         # Main Bash script
@@ -59,7 +64,7 @@ project/
 │   └── departments.txt # Departments table
 ├── README.md
 └── LICENSE
-`
+```
 
 ---
 
