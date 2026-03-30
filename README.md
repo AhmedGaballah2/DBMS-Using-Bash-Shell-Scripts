@@ -10,12 +10,12 @@
 [![Language](https://img.shields.io/badge/Language-Bash-orange?style=for-the-badge)](#)
 [![Status](https://img.shields.io/badge/Easy%20to%20Use-Yes-brightgreen?style=for-the-badge)](#)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Yes-blueviolet?style=for-the-badge)](#)
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&style=for-the-badge&label=VISITORS&color=blue)](https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts)
+[![Visitors](https://api.visitorbadge.io/api/combined?path=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&label=VISITORS&labelColor=%2337d67a&countColor=%23263238&style=for-the-badge)](https://visitorbadge.io/status?path=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts)
 
 <!-- GitHub Stats Badges -->
 [![Contributors](https://img.shields.io/github/contributors/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=yellow&style=for-the-badge)](https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/graphs/contributors)
-[![GitHub Stars](https://img.shields.io/github/stars/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=for-the-badge)](https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=for-the-badge)](https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=social)](https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=social)](https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/network/members)
 
 
 # 📊 Bash Script DataBase Management System
