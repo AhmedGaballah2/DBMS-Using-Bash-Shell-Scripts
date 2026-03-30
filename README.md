@@ -4,14 +4,14 @@
 </p>
 
 <p align="center">
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" /></a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
+  </a>
   <img src="https://img.shields.io/badge/OS-Linux-lightgrey?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Language-Bash-orange?style=for-the-badge" alt="Bash" />
   <img src="https://img.shields.io/badge/Status-Easy%20to%20Use-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Open%20Source-Yes-blueviolet?style=for-the-badge" />
-  <a href="#">
-    <img src="https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&style=for-the-badge" alt="Visitor Count" />
-  </a>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&left_text=Visitors&left_color=grey&right_color=red&style=for-the-badge" alt="Visitor Count" />
 </p>
 
 <p align="center">
