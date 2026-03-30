@@ -72,12 +72,54 @@ chmod +x DBMS.sh
 ## 📂 Project Structure
 ```
 project/
-├── scripts/
-│   └── DBMS.sh         # Main Bash script
-├── tables/
-│   ├── students.txt    # Students table
-│   ├── courses.txt     # Courses table
-│   └── departments.txt # Departments table
+├── DBMS.sh
+├── connectToDB.sh
+├── createDB.sh
+├── createTable.sh
+├── deleteFromTable.sh
+├── dropDB.sh
+├── dropTable.sh
+├── insertIntoTable.sh
+├── listDB.sh
+├── listTables.sh
+├── selectFromTable.sh
+├── updateTable.sh
+|
+├── Databases/
+│   ├── College/
+│   │   ├── courses
+│   │   ├── departmens
+│   │   ├── professors
+│   │   ├── salaries
+│   │   ├── students
+│   │   ├── courses.meta
+│   │   ├── departmens.meta
+│   │   ├── professors.meta
+│   │   ├── salaries.meta
+│   │   └── students.meta
+|   |   
+│   ├── Company/
+│   │   ├── departments
+│   │   ├── employees
+│   │   ├── projects
+│   │   ├── salaries
+│   │   ├── departments.meta
+│   │   ├── employees.meta
+│   │   ├── projects.meta
+│   │   └── salaries.meta
+|   |   
+│   └── School/
+│       ├── classes
+│       ├── departments
+│       ├── students
+│       ├── subjects
+│       ├── teachers
+│       ├── classes.meta
+│       ├── departments.meta
+│       ├── students.meta
+│       ├── subjects.meta
+│       └── teachers.meta
+|
 ├── README.md
 └── LICENSE
 ```
