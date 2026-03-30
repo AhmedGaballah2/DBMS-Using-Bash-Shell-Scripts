@@ -10,7 +10,7 @@
 [![Language](https://img.shields.io/badge/Language-Bash-orange?style=for-the-badge)](#)
 [![Status](https://img.shields.io/badge/Easy%20to%20Use-Yes-brightgreen?style=for-the-badge)](#)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Yes-blueviolet?style=for-the-badge)](#)
-[![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&style=for-the-badge)](#)
+[![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&style=for-the-badge)](#){width="250px"}
 
 <!-- GitHub Stats Badges -->
 [![Contributors](https://img.shields.io/github/contributors/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=yellow&style=for-the-badge)](https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/graphs/contributors)
