@@ -1,26 +1,26 @@
 <!-- Centered Title & Subtitle -->
 <p align="center">
-  <h1>Welcome to My Project 🚀</h1>
+  <h1>Welcome to Our Project 🚀</h1>
   <h3>Your go-to Linux Bash Script for Easy DataBase Management System 🐚</h3>
 </p>
 
 <!-- Badges -->
-[![License](https://img.shields.io/badge/License-MIT-red?style=flat)](https://opensource.org/licenses/MIT)
-[![OS](https://img.shields.io/badge/Linux-Ubuntu-orange?style=for-the-badge)](#)
-[![Language](https://img.shields.io/badge/Bash-Shell-blue?style=flat)](#)
-[![Easy to Use](https://img.shields.io/badge/Easy%20to%20Use-Yes-brightgreen?style=for-the-badge)](#)
-[![Open Source](https://img.shields.io/badge/Open%20Source-100%25-purple?style=flat)](#)
-[![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=yourusername.repo&style=flat)](#)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![OS](https://img.shields.io/badge/OS-Linux-lightgrey.svg)](#)
+[![Language](https://img.shields.io/badge/Language-Bash-orange.svg)](#)
+[![Status](https://img.shields.io/badge/Easy%20to%20Use-Yes-brightgreen.svg)](#)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-blueviolet.svg)](#)
+[![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&style=flat)](#)
 
 <!-- New GitHub Stats Badges -->
-[![Contributors](https://img.shields.io/github/contributors/yourusername/yourrepo?color=yellow&style=for-the-badge)](https://github.com/yourusername/yourrepo/graphs/contributors)
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/yourrepo?color=blue&style=flat-square)](https://github.com/yourusername/yourrepo/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/yourusername/yourrepo?color=green&style=plastic)](https://github.com/yourusername/yourrepo/network/members)
+[![Contributors](https://img.shields.io/github/contributors/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=yellow&style=for-the-badge)](https://github.com/yourusername/yourrepo/graphs/contributors)
+
+<!-- GitHub Stars & Forks badges like official GitHub style -->
+[![GitHub Stars](https://img.shields.io/github/stars/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=social)](https://github.com/yourusername/yourrepo/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=social)](https://github.com/yourusername/yourrepo/network/members)
 
 
 # 📊 Bash Script DataBase Management System
-
----
 
 ## 🌟 Overview
 This project is a **Bash-based database management tool** that lets you manage simple text-based tables entirely from the command line.  
@@ -97,9 +97,9 @@ This project is licensed under the MIT License. 📝
 ---
 
 ## 👨‍💻 Author
-**Ahmed Abdelmonem Gaballah** and **Mohamed Hamdi Elsayed**
-[GitHub](https://github.com/AhmedGaballah2)
-[GitHub](https://github.com/mohammed-hamdi26)
+**Ahmed Abdelmonem Gaballah** [GitHub](https://github.com/AhmedGaballah2)
+and 
+**Mohamed Hamdi Elsayed**  [GitHub](https://github.com/mohammed-hamdi26)
 
 
 
