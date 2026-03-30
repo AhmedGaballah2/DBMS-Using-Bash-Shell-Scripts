@@ -1,10 +1,10 @@
 # 📊 Bash Script DataBase Management System
 
-[![License](https://img.shields.io/badge/License-MIT-red?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![OS](https://img.shields.io/badge/Linux-Ubuntu-orange?style=flat-square)](#)
+[![License](https://img.shields.io/badge/License-MIT-red?style=flat)](https://opensource.org/licenses/MIT)
+[![OS](https://img.shields.io/badge/Linux-Ubuntu-orange?style=for-the-badge)](#)
 [![Language](https://img.shields.io/badge/Bash-Shell-blue?style=flat)](#)
-[![Easy to Use](https://img.shields.io/badge/Easy%20to%20Use-Yes-brightgreen?style=plastic)](#)
-[![Open Source](https://img.shields.io/badge/Open%20Source-100%25-purple?style=for-the-badge)](#)
+[![Easy to Use](https://img.shields.io/badge/Easy%20to%20Use-Yes-brightgreen?style=for-the-badge)](#)
+[![Open Source](https://img.shields.io/badge/Open%20Source-100%25-purple?style=flat)](#)
 [![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=yourusername.repo&style=flat)](#)
 
 ## 🌟 Overview
