@@ -5,19 +5,17 @@
 </p>
 
 <!-- Badges -->
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![OS](https://img.shields.io/badge/OS-Linux-lightgrey.svg)](#)
-[![Language](https://img.shields.io/badge/Language-Bash-orange.svg)](#)
-[![Status](https://img.shields.io/badge/Easy%20to%20Use-Yes-brightgreen.svg)](#)
-[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-blueviolet.svg)](#)
-[![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&style=flat)](#)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![OS](https://img.shields.io/badge/OS-Linux-lightgrey?style=for-the-badge)](#)
+[![Language](https://img.shields.io/badge/Language-Bash-orange?style=for-the-badge)](#)
+[![Status](https://img.shields.io/badge/Easy%20to%20Use-Yes-brightgreen?style=for-the-badge)](#)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-blueviolet?style=for-the-badge)](#)
+[![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&style=for-the-badge)](#)
 
-<!-- New GitHub Stats Badges -->
-[![Contributors](https://img.shields.io/github/contributors/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=yellow&style=for-the-badge)](https://github.com/yourusername/yourrepo/graphs/contributors)
-
-<!-- GitHub Stars & Forks badges like official GitHub style -->
-[![GitHub Stars](https://img.shields.io/github/stars/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=social)](https://github.com/yourusername/yourrepo/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=social)](https://github.com/yourusername/yourrepo/network/members)
+<!-- GitHub Stats Badges -->
+[![Contributors](https://img.shields.io/github/contributors/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=yellow&style=for-the-badge)](https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/graphs/contributors)
+[![GitHub Stars](https://img.shields.io/github/stars/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=for-the-badge)](https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=for-the-badge)](https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/network/members)
 
 
 # 📊 Bash Script DataBase Management System
