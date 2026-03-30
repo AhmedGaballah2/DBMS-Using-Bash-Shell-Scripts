@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Language-Bash-orange?style=for-the-badge" alt="Bash" />
   <img src="https://img.shields.io/badge/Status-Easy%20to%20Use-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Open%20Source-Yes-blueviolet?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?color=red&label=Visitors&query=count&url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2FAhmedGaballah2%2FDBMS-Using-Bash-Shell-Scripts&style=for-the-badge" alt="Visitor Count" />
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2FAhmedGaballah2%2FDBMS-Using-Bash-Shell-Scripts.json%3Fshow%3Dtrue%26style%3Dfor-the-badge&color=red" alt="Visitor Count" />
 </p>
 
 <p align="center">
