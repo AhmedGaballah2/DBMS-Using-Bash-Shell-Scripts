@@ -15,10 +15,15 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/graphs/contributors"><img src="https://img.shields.io/github/contributors/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=yellow&style=for-the-badge" /></a>
-  <br><br>
-  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/stargazers"><img src="https://img.shields.io/github/stars/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=social" /></a>
-  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/network/members"><img src="https://img.shields.io/github/forks/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?style=social" /></a>
+  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=yellow&style=for-the-badge" />
+  </a>
+  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/stargazers">
+    <img src="https://img.shields.io/github/stars/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=gold&style=for-the-badge" />
+  </a>
+  <a href="https://github.com/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts/network/members">
+    <img src="https://img.shields.io/github/forks/AhmedGaballah2/DBMS-Using-Bash-Shell-Scripts?color=lightgrey&style=for-the-badge" />
+  </a>
 </p>
 
 # 📊 Bash Script DataBase Management System
