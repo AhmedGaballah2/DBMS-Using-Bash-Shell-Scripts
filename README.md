@@ -139,12 +139,12 @@ This project is licensed under the MIT License. 📝
 
 ---
 
-## 👨‍💻 Author
-**Ahmed Abdelmonem Gaballah** [GitHub](https://github.com/AhmedGaballah2)
-and 
-**Mohamed Hamdi Elsayed**  [GitHub](https://github.com/mohammed-hamdi26)
+## 👥 Authors
 
-
+| Name | GitHub Profile |
+| :--- | :--- |
+| **Ahmed Abdelmonem Gaballah** | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/AhmedGaballah2) |
+| **Mohamed Hamdi Elsayed** | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/mohammed-hamdi26) |
 
 
 
