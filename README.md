@@ -87,38 +87,8 @@ project/
 |
 ├── Databases/
 │   ├── College/
-│   │   ├── courses
-│   │   ├── departmens
-│   │   ├── professors
-│   │   ├── salaries
-│   │   ├── students
-│   │   ├── courses.meta
-│   │   ├── departmens.meta
-│   │   ├── professors.meta
-│   │   ├── salaries.meta
-│   │   └── students.meta
-|   |   
-│   ├── Company/
-│   │   ├── departments
-│   │   ├── employees
-│   │   ├── projects
-│   │   ├── salaries
-│   │   ├── departments.meta
-│   │   ├── employees.meta
-│   │   ├── projects.meta
-│   │   └── salaries.meta
-|   |   
+│   ├── Company/ 
 │   └── School/
-│       ├── classes
-│       ├── departments
-│       ├── students
-│       ├── subjects
-│       ├── teachers
-│       ├── classes.meta
-│       ├── departments.meta
-│       ├── students.meta
-│       ├── subjects.meta
-│       └── teachers.meta
 |
 ├── README.md
 └── LICENSE
