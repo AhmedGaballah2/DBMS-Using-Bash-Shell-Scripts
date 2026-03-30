@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-Bash-orange?style=for-the-badge" alt="Bash" />
   <h1 align="center">Welcome to Our Project 🚀</h1>
   <h3 align="center">Your go-to Linux Bash Script for Easy DataBase Management System 🐚</h3>
 </p>
@@ -7,9 +6,12 @@
 <p align="center">
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" /></a>
   <img src="https://img.shields.io/badge/OS-Linux-lightgrey?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-Bash-orange?style=for-the-badge" alt="Bash" />
   <img src="https://img.shields.io/badge/Status-Easy%20to%20Use-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Open%20Source-Yes-blueviolet?style=for-the-badge" />
-  <a href="https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts"><img src="https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&style=for-the-badge&label=VISITORS&color=blue" /></a>
+  <a href="#">
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=AhmedGaballah2.DBMS-Using-Bash-Shell-Scripts&style=for-the-badge" alt="Visitor Count" />
+  </a>
 </p>
 
 <p align="center">
