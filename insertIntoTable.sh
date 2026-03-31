@@ -1,6 +1,6 @@
 #!/bin/bash
 regex='A-Za-z'
-regex_num='1-9'
+regex_num='0-9'
 
 add_record(){
     while true
@@ -9,15 +9,15 @@ add_record(){
 	    read -r -p "enter table name : " tname 
 	    
 	    if [[ -e $tname ]]; then
-		    col_num=`awk "END{print NR}" $tname.rows`
+		    col_num=`awk "END{print NR}" $tname.meta`
 		    
 		    i=1
 		    while (( i <= $col_num ))
 		    do
 		    declare -a record
-		    checkcolname=`awk 'BEGIN {FS=":"}{if ( NR=='$i' ) print $1 }' $tname.rows`
-		    checkcolPK=`awk 'BEGIN {FS=":"}{if ( NR=='$i' ) print $2 }' $tname.rows`
-		    checkcoltype=`awk 'BEGIN {FS=":"}{if ( NR=='$i' ) print $3 }' $tname.rows`
+		    checkcolname=`awk 'BEGIN {FS=":"}{if ( NR=='$i' ) print $1 }' $tname.meta`
+		    checkcoltype=`awk 'BEGIN {FS=":"}{if ( NR=='$i' ) print $2 }' $tname.meta`
+		    checkcolPK=`awk 'BEGIN {FS=":"}{if ( NR=='$i' ) print $3 }' $tname.meta`
 		    echo "enter your record $checkcolname :"
 		    read -r record_
 		    if [[ $checkcoltype == 'int' ]] ;
@@ -29,7 +29,7 @@ add_record(){
 			read -r record_
 			
 		    done
-		    elif [[ $checkcoltype == 'str' ]];
+		    elif [[ $checkcoltype == 'varchar' ]];
 		    then
 		       while  [[ ! $record_ =~ ^[$regex]+$ ]];
 		       do
@@ -39,9 +39,9 @@ add_record(){
 			
 			done
 		    fi
-		    if [[ $checkcolPK == 'yes' ]];
+		    if [[ $checkcolPK == 'pk' ]];
 		    then
-		    values=`awk -v var=$i -F : 'BEGIN{ORS=" "} {print $var}' $tname`
+		    values=$(awk -v var=$i -F: '{print $var}' "$tname")
 		    for item in $values
 		    do 
 			if  [ $item = $record_ ];
@@ -51,10 +51,10 @@ add_record(){
 			fi
 		    done 
 		    fi  
-		    record=(${record[@]} $record_ ':')
+		    record+=("$record_")
 		    i=$(( $i + 1 ))
 		    done
-		    echo ${record[@]} >> $tname
+		   (IFS=:; echo "${record[*]}") >> "$tname"
 		    echo "Record inserted successfully ✔️"
 
 		    break	    
