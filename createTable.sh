@@ -1,20 +1,20 @@
 #!/bin/bash
+
 declare -a list
 regex_num='0-9'
 regex_col_name='A-Za-z'
 
 col_name(){
-    read  -p "enter coiumn name: " col_name  
+    read  -p "Enter column name: " col_name  
     
     if [[ ! $col_name =~ ^[$regex_col_name]+$ ]];
     then
         echo "column have charaters [A-Za-z] only "
-        rm $table_name $table_name.meta
+        rm $table_name $table_name.rows
         exit 0
     else
-       
+        echo "done"
         list=( ${list[@]} $col_name)   
-        echo -n "$col_name" >> "$table_name"
      fi              
 }
 
@@ -31,11 +31,11 @@ clo_PK(){
 }
 
 col_type(){
-    read -p "what is column type [int/i ,varchar/vch] : " column_type
+    read -p "what is column type [int/i ,str/s] : " column_type
         case $column_type in 
              int|i) list=(${list[@]}":int")
              ;;
-             varchar|vch) list=(${list[@]}":varchar")
+             str|s) list=(${list[@]}":str")
              ;;
               *)echo "error[must be int/str]";rm $table_name $table_name.rows; exit 0  
              ;;
@@ -45,63 +45,44 @@ col_type(){
 
 createTable(){
 
-regex_num='0-9'
-
 while true
 do
   echo -e "\nCreate Table\n"
-  read -r -p "Please enter the name of the table (must start with alphabetic character): " table_name
+  read -r -p "Please enter the name of the table(must start with alphabetic character): " table_name
   
   if [ -z "$table_name" ]; then
-        echo -e "\nPlease enter a correct name, name can not be empty\n"
+  	echo -e "\nPlease enter a correct name, name can not be empty\n"
         continue
   fi
-
   if [[ "$table_name" = *[[:space:]]* ]]; then
         echo -e "\nTable name cannot contain spaces\n"
         continue
   fi
-
   if [ -f "$table_name.table" ]; then
         echo -e "\nThis table name already exists\n"
-        continue
+ 	continue
   fi
 
   if [[ "$table_name" == [a-zA-Z]* ]]; then
+        read -r -p "Please enter  your columns number: " col_num
+        if [[ ! $col_num =~ ^[$regex_num]+$ ]]; then
+      		echo "column must be num only "
+    	else
+        	touch $table_name $table_name.rows
+        	echo -e "\nTable created successfully\n"
+        	
+        	i=0
+	      	while ((i < $col_num))
+	      	do
+			col_name
+			clo_PK
+			i=$(( $i + 1 )) 
+	      	done
+	      echo   ${list[@]} | tr " " "\n "> $table_name.rows
+	      done
+      fi
         
-        read -r -p "Please enter your columns number: " col_num
-        
-        if [[ ! $col_num =~ ^[0-9]+$ ]]; then
-              echo "Column number must be numeric only"
-              continue
-        fi
-
-        touch "$table_name" "$table_name.meta"
-        echo -e "\nTable created successfully\n"
-        
-
-        i=0
-        
-        while (( i < col_num ))
-        do
-              col_name   # يفترض أنها function تأخذ اسم العمود
-              if [[ $i -ne $((col_num - 1)) ]]; then
-              	      echo -n ":" >> "$table_name"
-              fi
-	      col_type
-              if [[ $i -eq 0 ]]; then
-                    list=(${list[@]}":pk")
-              fi
-
-              i=$(( i + 1 ))
-        done
-
-        echo ${list[@]} | tr " " "\n" > "$table_name.meta"
-        break
-  else
-        echo "Table name must start with a letter"
-  fi
-
+ fi
 done
 }
 
