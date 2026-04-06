@@ -1,89 +1,161 @@
 #!/bin/bash
-
 declare -a list
 regex_num='0-9'
-regex_col_name='A-Za-z'
 
-col_name(){
-    read  -p "Enter column name: " col_name  
-    
-    if [[ ! $col_name =~ ^[$regex_col_name]+$ ]];
-    then
-        echo "column have charaters [A-Za-z] only "
-        rm $table_name $table_name.rows
-        exit 0
-    else
-        echo "done"
-        list=( ${list[@]} $col_name)   
-     fi              
-}
+col_name() {
+	while true
+	do
+	    read -p "enter column name: " col_name  
+	    echo
 
-clo_PK(){
-        read  -p "this column is primary key or not [yes/no] :"  PK
-        case $PK in 
-             Yes|Y|yes|y) list=(${list[@]}':yes')
-             col_type;;
-             NO|N|no|n) list=(${list[@]}':no')
-             col_type;;
-             *)echo 'error[must be yes or No]';rm $table_name $table_name.rows; exit 0
-             ;;
-        esac
+	    if [ -z "$col_name" ]; then
+		echo "Column name can't be empty! ❌"
+		echo
+		continue
+	    fi
+
+	    if [[ ! $col_name =~ ^[A-Za-z]+$ ]]; then
+		echo "Invalid column's name! ❌"
+		echo
+		continue
+	    fi
+
+	    # check duplicate
+	    for item in "${list[@]}"
+	    do
+		name_only=$(echo "$item" | cut -d ":" -f1)
+
+		if [[ "$name_only" == "$col_name" ]]; then
+		    echo "Column's name already exists! ❌"
+		    echo
+		    continue 2
+		fi
+	    done
+	    break
+	done
 }
 
 col_type(){
-    read -p "what is column type [int/i ,str/s] : " column_type
-        case $column_type in 
-             int|i) list=(${list[@]}":int")
-             ;;
-             str|s) list=(${list[@]}":str")
-             ;;
-              *)echo "error[must be int/str]";rm $table_name $table_name.rows; exit 0  
-             ;;
-        esac
+	while true
+	do
+	    read -p "what is column type [int/i , varchar/vch] : " column_type
+	    echo
 
+	    case $column_type in
+		int|i)
+		    column_def="$col_name:int"
+		    break
+		;;
+		
+		varchar|vch)
+		    column_def="$col_name:varchar"
+		    break
+		;;
+		
+		*)echo "Invalid type! (int/varchar)! ❌";
+		echo
+		;;
+	    esac
+	done
+
+	# add pk to first column
+	if [[ $i -eq 0 ]]; then
+	    column_def="$column_def:pk"
+	fi
+
+	# store full column definition in list
+	list+=("$column_def")
 }
-
+	
 createTable(){
+	while true
+	do
+	  echo -e "\nCreate Table\n"
+	  read -r -p "Enter the table's name (Or 'back' to return): " table_name
+	  echo
+	  
+	  if [[ "${table_name,,}" = "back" ]]; then
+	  	return
+	  fi
+	  
+	  if [ -z "$table_name" ]; then
+		echo -e "\nEnter a correct name, name can not be empty! ❌"
+		echo
+		continue
+	  fi
 
-while true
-do
-  echo -e "\nCreate Table\n"
-  read -r -p "Please enter the name of the table(must start with alphabetic character): " table_name
-  
-  if [ -z "$table_name" ]; then
-  	echo -e "\nPlease enter a correct name, name can not be empty\n"
-        continue
-  fi
-  if [[ "$table_name" = *[[:space:]]* ]]; then
-        echo -e "\nTable name cannot contain spaces\n"
-        continue
-  fi
-  if [ -f "$table_name.table" ]; then
-        echo -e "\nThis table name already exists\n"
- 	continue
-  fi
+	  if [[ "$table_name" = *[[:space:]]* ]]; then
+		echo -e "\nTable's name cannot contain spaces! ❌"
+		echo
+		continue
+	  fi
 
-  if [[ "$table_name" == [a-zA-Z]* ]]; then
-        read -r -p "Please enter  your columns number: " col_num
-        if [[ ! $col_num =~ ^[$regex_num]+$ ]]; then
-      		echo "column must be num only "
-    	else
-        	touch $table_name $table_name.rows
-        	echo -e "\nTable created successfully\n"
-        	
-        	i=0
-	      	while ((i < $col_num))
-	      	do
-			col_name
-			clo_PK
-			i=$(( $i + 1 )) 
-	      	done
-	      echo   ${list[@]} | tr " " "\n "> $table_name.rows
-	      done
-      fi
-        
- fi
-done
+	  if [ -f "$table_name" ]; then
+		echo -e "\nTable already exists! ❌"
+		echo
+		continue
+	  fi
+
+	  if [[ "$table_name" == [a-zA-Z]* ]]; then
+		
+		# loop until user enters valid number
+		while true
+		do
+		    read -r -p "Please enter your columns number: " col_num
+		    echo
+		
+		    # empty check
+		    if [ -z "$col_num" ]; then
+		        echo "Column number can't be empty! ❌"
+		        echo
+		        continue
+		    fi
+
+		    # numeric check
+		    if [[ ! $col_num =~ ^[0-9]+$ ]]; then
+		        echo "Column number must be numeric only! ❌"
+		        echo
+		        continue
+		    fi
+
+		    # optional: prevent zero
+		    if (( col_num == 0 )); then
+		        echo "Column number must be greater than 0! ❌"
+		        echo
+		        continue
+		    fi
+		    break   # valid input -> exit loop
+		done
+
+		touch "$table_name" "$table_name.meta"
+
+		i=0
+		
+		while (( i < col_num ))
+		do
+		      col_name
+			# write column name
+			echo -n "$col_name" >> "$table_name"
+
+			# add : between columns
+			if [[ $i -ne $((col_num - 1)) ]]; then
+			    echo -n ":" >> "$table_name"
+			fi
+
+		      col_type
+
+		      ((i++))
+		done
+
+		printf "%s\n" "${list[@]}" > "$table_name.meta"
+		echo -e "\nTable created successfully! ✅\n"
+		break
+
+	else
+		echo "Invalid table's name. Must start with a letter! ❌"
+		echo
+	fi
+
+	done
 }
-
 createTable
