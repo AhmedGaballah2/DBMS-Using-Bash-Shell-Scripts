@@ -5,7 +5,7 @@ BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 connect_to_DB() {
 	echo
 	read -p "Enter Database Name: " db_name
-	
+
 	DB_PATH="$BASE_DIR/Databases/$db_name"
 
 	if [ -d "$DB_PATH" ]; then
@@ -40,10 +40,10 @@ DB_PATH="$1"
 		read -p "Choose: " choice
 		echo
 		case $choice in
-			1) echo "1" ;;
+			1) . "$BASE_DIR/createTable.sh" "$DB_PATH";;
 			2) . "$BASE_DIR/listTables.sh" "$DB_PATH" ;;
 			3) . "$BASE_DIR/dropTable.sh" "$DB_PATH" ;;
-			4) echo "4" ;;
+			4) . "$BASE_DIR/insertIntoTable.sh" "$DB_PATH";;
 			5) . "$BASE_DIR/selectFromTable.sh" "$DB_PATH" ;;
 			6) . "$BASE_DIR/deleteFromTable.sh" "$DB_PATH" ;;
 			7) . "$BASE_DIR/updateTable.sh" "$DB_PATH" ;;
