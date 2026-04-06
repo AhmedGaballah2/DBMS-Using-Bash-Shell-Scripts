@@ -22,9 +22,9 @@ dropTable() {
 	# Existance check
 	if [ -f "$table_name" ]; then
 		while true; do
-			read -p "Are you sure you want to delete $db_name? [y/n]: " ans
+			read -p "Are you sure you want to delete '$table_name'? [y/n]: " ans
 			if [[ "${ans,,}" = "y" ]]; then
-				rm "$table_name"
+				rm "$table_name" "$table_name.meta"
 				echo "Table '$table_name' is deleted successfully! ✅"
 				echo
 				break
@@ -34,7 +34,7 @@ dropTable() {
 				break
 			else
 				echo
-				echo "Inavlid answer! ❌"
+				echo "Invalid answer! ❌"
 				continue
 			fi
 		done
